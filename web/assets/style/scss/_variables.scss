@@ -1,0 +1,21 @@
+/* sass scss/custom-bootstrap.scss css/custom-bootstrap.css --watch */
+
+$primary: #0788D9;
+$secondary: #3b3b3b;
+$success: #048ABF;
+$info: #45e9ff;
+$warning: #ff9500;
+$danger: #ff4e50;
+$light: #f2f2f2;
+$dark: #1d1d1d;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);

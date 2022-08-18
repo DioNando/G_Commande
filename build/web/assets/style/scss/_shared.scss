@@ -1,0 +1,68 @@
+html {
+    height: 100%;
+
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100%;
+    }
+
+    *::-webkit-scrollbar,
+    body::-webkit-scrollbar {
+        width: 0.75rem;
+        height: 0.25rem;
+    }
+    *::-webkit-scrollbar-track,
+    body::-webkit-scrollbar-track {
+        --bg-opacity: 1;
+        background-color: $light;
+        background-color: rgba(251, 255, 219, var(--bg-opacity));
+    }
+    *::-webkit-scrollbar-thumb,
+    body::-webkit-scrollbar-thumb {
+        --bg-opacity: 1;
+        background-color: $secondary;
+        background-color: rgba(251, 255, 219, var(--bg-opacity));
+        background-color: $primary;
+    }
+    *::-webkit-scrollbar-thumb:hover,
+        body::-webkit-scrollbar-thumb:hover {
+        background-color: $dark;
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    body {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    header {
+        // background: linear-gradient(90deg, $light 0%, $light 60%, $success 100%);
+    }
+
+    .page-item {
+        .page-link {
+            color: $dark;
+            background-color: transparent;
+            border: 1px solid $primary;
+        }
+
+        &.active .page-link {
+            color: $dark;
+            background-color: $primary;
+            border: 1px solid $primary;
+        }
+    }
+
+    .cursorTable {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
